@@ -1,0 +1,42 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: pink;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 70px;
+}
+
+h4 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Bree Serif', serif;
+}
+
+img {
+    border: 5px #FFA1C9 solid;
+    background-color: white;
+    border-radius: 70px;
+    font-size: 70px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 5px;
+
+
+}
+
+results 
+{
+ color: white;
+    font-size: 50px;
+    font-family: 'Bree Serif', serif;
+}
