@@ -1,0 +1,97 @@
+<!DOCTYPE html> <html><head>
+        <title>Anisella Joseph Unit 5 Project </title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Bungee+Spice&family=Dancing+Script&family=Fredoka+One&family=Lora&family=Oleo+Script+Swash+Caps&family=Playfair+Display&family=Raleway&display=swap');
+        </style>
+
+    <style>body {
+    font-family: 'Oswald', sans-serif;
+    background-color: pink;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 70px;
+}
+
+h4 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Bree Serif', serif;
+}
+
+img {
+    border: 5px #FFA1C9 solid;
+    background-color: white;
+    border-radius: 70px;
+    font-size: 70px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 5px;
+
+
+}
+
+results 
+{
+ color: white;
+    font-size: 50px;
+    font-family: 'Bree Serif', serif;
+}</style></head>
+    <body>
+        <div class="title">
+            <h1>What color are you?</h1>
+        </div>
+        <div class="questions">
+            <h4>How many siblings do you have?</h4>
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cac042c5-b0ee-4c54-971d-9d3432714b6a/da5qjji-9a1a024b-65b6-46f8-bbc6-23ac7a6101ec.jpg/v1/fill/w_1024,h_776,q_75,strp/daily_drawing_161__annoying_siblings_pose_by_mini_sanada_da5qjji-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Nzc2IiwicGF0aCI6IlwvZlwvY2FjMDQyYzUtYjBlZS00YzU0LTk3MWQtOWQzNDMyNzE0YjZhXC9kYTVxamppLTlhMWEwMjRiLTY1YjYtNDZmOC1iYmM2LTIzYWM3YTYxMDFlYy5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LDYy03MSOe7wK399guGRzFH-R4jYNOXWIJDoV9OJrOQ">
+            <div> <input placeholder="Write answer here" class="comment">
+
+            </div>
+            <h4>Do you like sports or shopping more?</h4>
+            <img src="https://media.istockphoto.com/id/960129488/vector/sport-shop-store-graphic-interior-black-white-sketch-illustration-vector.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=IRXZrVi-3kUjTifHQDWLVoHgr7Lf0s0hOY9Fso0p_Nw=">
+            <div> <input placeholder="Write answer here" class="comment-two">
+                <button class="submit">Submit</button>
+            </div>
+            <div class="results-two">
+                this is where the user will see their quiz result!
+            </div></div><script>
+/*__POPCODESTART__*/
+var submitButton = document.querySelector(".submit");
+var messages = document.querySelector(".results-two");
+
+submitButton.onclick = function () {
+  //write your code here!
+  var comment = document.querySelector(".comment").value;
+  var commenttwo = document.querySelector(".comment-two").value;
+  console.log(comment);
+  messages.innerHTML = comment + commenttwo;
+  var activityInput = document.querySelector(".comment-two").value;
+  var number = document.querySelector(".comment").value;
+  number = Number(number);
+
+  if (number >= 3 && number <= 10 && activityInput === "shopping") {
+    messages.innerHTML = "You got blue!";
+  }
+
+  if (number >= 0 && number <= 2 && activityInput === "sports") {
+    messages.innerHTML = "You got purple!";
+  }
+
+  if (number >= 0 && number <= 2 && activityInput === "shopping") {
+    messages.innerHTML = "You got green!";
+  }
+
+  if (number >= 3 && number <= 10 && activityInput === "sports") {
+    messages.innerHTML = "You got pink!";
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbInN1Ym1pdEJ1dHRvbiIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsIm1lc3NhZ2VzIiwib25jbGljayIsImNvbW1lbnQiLCJ2YWx1ZSIsImNvbW1lbnR0d28iLCJjb25zb2xlIiwibG9nIiwiaW5uZXJIVE1MIiwiYWN0aXZpdHlJbnB1dCIsIm51bWJlciIsIk51bWJlciJdLCJtYXBwaW5ncyI6IkFBQUEsSUFBSUEsWUFBWSxHQUFHQyxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsU0FBdkIsQ0FBbkI7QUFDQSxJQUFJQyxRQUFRLEdBQUdGLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixjQUF2QixDQUFmOztBQUVBRixZQUFZLENBQUNJLE9BQWIsR0FBdUIsWUFBVztBQUM5QjtBQUNBLE1BQUlDLE9BQU8sR0FBR0osUUFBUSxDQUFDQyxhQUFULENBQXVCLFVBQXZCLEVBQW1DSSxLQUFqRDtBQUNBLE1BQUlDLFVBQVUsR0FBR04sUUFBUSxDQUFDQyxhQUFULENBQXVCLGNBQXZCLEVBQXVDSSxLQUF4RDtBQUNBRSxFQUFBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWUosT0FBWjtBQUNBRixFQUFBQSxRQUFRLENBQUNPLFNBQVQsR0FBc0JMLE9BQU8sR0FBR0UsVUFBaEM7QUFDQSxNQUFJSSxhQUFhLEdBQUdWLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixjQUF2QixFQUF1Q0ksS0FBM0Q7QUFFQSxNQUFJTSxNQUFNLEdBQUdYLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixVQUF2QixFQUFtQ0ksS0FBaEQ7QUFDQU0sRUFBQUEsTUFBTSxHQUFHQyxNQUFNLENBQUNELE1BQUQsQ0FBZjs7QUFFQSxNQUFLQSxNQUFNLElBQUksQ0FBVixJQUFlQSxNQUFNLElBQUksRUFBMUIsSUFBa0NELGFBQWEsS0FBSyxVQUF4RCxFQUFxRTtBQUNqRVIsSUFBQUEsUUFBUSxDQUFDTyxTQUFULEdBQXFCLGVBQXJCO0FBQ0g7O0FBRUQsTUFBS0UsTUFBTSxJQUFJLENBQVYsSUFBZUEsTUFBTSxJQUFJLENBQTFCLElBQWdDRCxhQUFhLEtBQUssUUFBdEQsRUFBZ0U7QUFDNURSLElBQUFBLFFBQVEsQ0FBQ08sU0FBVCxHQUFxQixpQkFBckI7QUFDSDs7QUFDRCxNQUFLRSxNQUFNLElBQUksQ0FBVixJQUFlQSxNQUFNLElBQUksQ0FBMUIsSUFBZ0NELGFBQWEsS0FBSyxVQUF0RCxFQUFrRTtBQUM5RFIsSUFBQUEsUUFBUSxDQUFDTyxTQUFULEdBQXFCLGdCQUFyQjtBQUNIOztBQUNELE1BQUtFLE1BQU0sSUFBSSxDQUFWLElBQWVBLE1BQU0sSUFBSSxFQUExQixJQUFpQ0QsYUFBYSxLQUFLLFFBQXZELEVBQWlFO0FBQzdEUixJQUFBQSxRQUFRLENBQUNPLFNBQVQsR0FBcUIsZUFBckI7QUFDSDtBQUdKLENBMUJEIiwic291cmNlc0NvbnRlbnQiOlsibGV0IHN1Ym1pdEJ1dHRvbiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuc3VibWl0XCIpO1xubGV0IG1lc3NhZ2VzID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXN1bHRzLXR3b1wiKTtcblxuc3VibWl0QnV0dG9uLm9uY2xpY2sgPSBmdW5jdGlvbigpIHtcbiAgICAvL3dyaXRlIHlvdXIgY29kZSBoZXJlIVxuICAgIGxldCBjb21tZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5jb21tZW50XCIpLnZhbHVlO1xuICAgIGxldCBjb21tZW50dHdvID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5jb21tZW50LXR3b1wiKS52YWx1ZTtcbiAgICBjb25zb2xlLmxvZyhjb21tZW50KTtcbiAgICBtZXNzYWdlcy5pbm5lckhUTUwgPSAoY29tbWVudCArIGNvbW1lbnR0d28pO1xuICAgIGxldCBhY3Rpdml0eUlucHV0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5jb21tZW50LXR3b1wiKS52YWx1ZTtcbiAgXG4gICAgbGV0IG51bWJlciA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuY29tbWVudFwiKS52YWx1ZTtcbiAgICBudW1iZXIgPSBOdW1iZXIobnVtYmVyKTtcblxuICAgIGlmICgobnVtYmVyID49IDMgJiYgbnVtYmVyIDw9IDEwKSAmJiAoYWN0aXZpdHlJbnB1dCA9PT0gXCJzaG9wcGluZ1wiKSkge1xuICAgICAgICBtZXNzYWdlcy5pbm5lckhUTUwgPSBcIllvdSBnb3QgYmx1ZSFcIjtcbiAgICB9XG4gICAgXG4gICAgaWYgKChudW1iZXIgPj0gMCAmJiBudW1iZXIgPD0gMikgJiYgYWN0aXZpdHlJbnB1dCA9PT0gXCJzcG9ydHNcIikge1xuICAgICAgICBtZXNzYWdlcy5pbm5lckhUTUwgPSBcIllvdSBnb3QgcHVycGxlIVwiO1xuICAgIH1cbiAgICBpZiAoKG51bWJlciA+PSAwICYmIG51bWJlciA8PSAyKSAmJiBhY3Rpdml0eUlucHV0ID09PSBcInNob3BwaW5nXCIpIHtcbiAgICAgICAgbWVzc2FnZXMuaW5uZXJIVE1MID0gXCJZb3UgZ290IGdyZWVuIVwiO1xuICAgIH1cbiAgICBpZiAoKG51bWJlciA+PSAzICYmIG51bWJlciA8PSAxMCkgJiYgYWN0aXZpdHlJbnB1dCA9PT0gXCJzcG9ydHNcIikge1xuICAgICAgICBtZXNzYWdlcy5pbm5lckhUTUwgPSBcIllvdSBnb3QgcGluayFcIjtcbiAgICB9XG4gICAgXG4gICAgXG59OyJdfQ==</script></body></html>
